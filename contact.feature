@@ -4,7 +4,7 @@ Feature: Contact form
   Scenario: Happy path
     Given I am on "/contact"
     When I fill in "Your name" with "Obehave tester"
-    And I fill in "Email" with "klsalkewinasdflkkjaeidsfzx@mailinator.com"
+    And I fill in "e-mail address" with "klsalkewinasdflkkjaeidsfzx@mailinator.com"
     And I fill in "Subject" with "An Obehave test"
     And I fill in "Message" with "This is the content of the message"
     And I check "Send yourself a copy"
