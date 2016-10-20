@@ -1,15 +1,10 @@
-
 Feature: Contact form
   
   Scenario: Happy path
     Given I am on "/contact"
-    When I fill in "Your name" with "Obehave tester"
-    And I fill in "e-mail address" with "blackhole@example.com"
-    And I fill in "Subject" with "An Obehave test"
-    And I fill in "Message" with "This is the content of the message"
-    And I press "Send e-mail"
-    Then I should see "Your message has been sent."
-    And I should see "Bevan Rudge JavaScript and web technologist"
-    And I should see "Not so highly critical"
-    Given I am on "https://www.mailinator.com/inbox2.jsp?public_to=obehave-js.geek.nz-cc"
-    Then I should see "[Contact] An Obehave test"
+    When I fill in "e-mail address" with "anyone@example.com"
+    And I fill in "name" with "Bevan"
+    And I fill in "Subject" with "Testing 123"
+    And I fill in "Message" with "Hello worlds!"
+    And I click "Send"
+    Then I should see "successfully sent"
