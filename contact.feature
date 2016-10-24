@@ -7,4 +7,4 @@ Feature: Contact form
     And I fill in "Subject" with "Testing 123"
     And I fill in "Message" with "Hello worlds!"
     And I click "Send"
-    Then I should see "successfully sent"
+    Then I should see "Your message has been sent."
