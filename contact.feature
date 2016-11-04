@@ -1,7 +1,10 @@
-Feature: Company box sign up form
+Feature: Contact form
   
-  Scenario: Signup form on homepage shows validation errors
-    Given I am on the homepage
-    When I click "Sign Up"
-    Then I should be on "/users"
-    And I should see "Please review the problems"
+  Scenario: Happy path
+    Given I am on "/contact"
+    When I fill in "e-mail address" with "anyone@example.com"
+    And I fill in "name" with "Bevan"
+    And I fill in "Subject" with "Testing 123"
+    And I fill in "Message" with "Hello worlds!"
+    And I click "Send"
+    Then I should see "Your message has been sent."
