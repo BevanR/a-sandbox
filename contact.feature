@@ -3,4 +3,8 @@ Feature: Moco login
   Scenario: Happy path
     Given I am on the homepage
     When I click "LOGIN"
-    Then I should see "Forgot your password"
+    And I fill in "Username" with "demo"
+    And I fill in "Password" with "demo"
+    And I click "Login"
+    Then I should see "Invalid username or password!"
+    And I should see "Forgot your password"
