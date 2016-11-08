@@ -13,7 +13,8 @@ Feature: Authentiaction
     Given I click "Sales Rep"
     And I click "Shopping Cart"
     And I fill in "Search Customer" with "lem"
-    # And I click "Lemon Traders"
+    And I wait 2 seconds
+    And I click "Lemon Traders"
     And I click "Add"
     And I click "Add"
     And I click "Order Now"
