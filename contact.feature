@@ -10,7 +10,9 @@ Feature: Authentiaction
     When I click "menu-toggle-2"
     
   Scenario: Place an order
-    Given I fill in "Search Customer" with "lem"
+    Given I click "Sales Rep"
+    And I click "Shopping Cart"
+    And I fill in "Search Customer" with "lem"
     And I click "Lemon Traders"
     And I click "Add"
     And I click "Add"
