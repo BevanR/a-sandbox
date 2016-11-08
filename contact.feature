@@ -9,4 +9,4 @@ Feature: Authentiaction
     Then I should see "User: Demo"
     
   Scenario: Open menu
-    When I click "#menu-toggle-2"
+    When I click "menu-toggle-2"
