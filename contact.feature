@@ -1,7 +1,8 @@
 Feature: Sign up
   
   Scenario: Successful sign up
-    Given I am on the homepage
+    Given I am on "/?couponCode="
+    And I wait for "Firt Name" to appear
     When I fill in "First Name" with "Obehave"
     And I fill in "Last Name" with "Tester"
     And I fill in "Company Name" with "Acme Inc"
