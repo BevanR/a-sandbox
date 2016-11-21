@@ -1,24 +1,11 @@
-Feature: Authentiaction
+Feature: Contact form
   
-  Background: Login
+  Scenario: Success
     Given I am on the homepage
-    When I click "LOGIN"
-    And I fill in "Username" with "demo"
-    And I fill in "Password" with "1234"
-    And I click "Login"
-    Then I should see "User: Demo"
-    When I click "menu-toggle-2"
-    
-  Scenario: Place an order
-    Given I click "Sales Rep"
-    And I click "Shopping Cart"
-    And I fill in "Search Customer" with "lem"
-    And I wait 2 seconds
-    And I click "Lemon Traders"
-    And I click "Add"
-    And I click "Add"
-    And I click "Order Now"
-    And I fill in "Order No" with "1234"
-    And I fill in "Person Ordering" with "Obehave tester"
-    When I click "Charge My Account"
-    Then I should see "Shopping Empty! Drag or Add products"
+    When I click "Contact"
+    And I fill in "name" with "Obehave tester"
+    And I fill in "e-mail" with "tester@obehave.io"
+    And I fill in "Subject" with "This is just a test"
+    And I fill in "Message" with "Hello Worlds!"
+    And I click "Send"
+    Then I should see "Your message has been sent"
