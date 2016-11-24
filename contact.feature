@@ -1,10 +1,8 @@
-Feature: Contact form
+Feature: The contact form 
   
-  Scenario: Happy path
-    Given I am on "/contact"
-    When I fill in "e-mail address" with "anyone@example.com"
-    And I fill in "name" with "Bevan"
-    And I fill in "Subject" with "Testing 123"
-    And I fill in "Message" with "Hello worlds!"
+  Scenario: Invalid email
+    Given I am on the homepage
+    When I click "Contact"
+    And I fill in "e-mail" with "invalid email address"
     And I click "Send"
-    Then I should see "Your message has been sent." 
+    Then I should see "Valid e-mail address required"
