@@ -11,3 +11,4 @@ Feature:
     Then I should see "three"
     
   Scenario: four
+    Given I am on the homepage
