@@ -8,3 +8,5 @@ Feature: The contact form
     Then I should see "valid e-mail address"
     
   Scenario: asdfasdf
+    Given I am on the homepage
+    When I click "two"
