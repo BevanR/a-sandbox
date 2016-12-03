@@ -10,3 +10,4 @@ Feature: The contact form
   Scenario: sadf
     Given I am on the homepage
     When I click "text"
+    Then I should see "text"
