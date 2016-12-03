@@ -13,3 +13,4 @@ Feature:
   Scenario: four
     Given I am on the homepage
     When I click "text"
+    Then I should see "asdf"
